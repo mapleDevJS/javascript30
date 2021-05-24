@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript 30 Day Challenge</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        padding: 32px;
+        font-family: monospace;
+        background-color: #f5c744;
+        line-height: 1.6;
+      }
+
+      h1 {
+        margin: 0 0 32px;
+        font-family: 'JetBrains Mono', monospace;
+        text-align: center;
+      }
+
+      ol {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 48px;
+        max-width: 1000px;
+        margin: 0 auto 80px;
+        padding: 0;
+        list-style: none;
+        font-size: 24px;
+        counter-reset: list;
+      }
+
+      li {
+        counter-increment: list;
+        position: relative;
+        padding-left: 20px;
+      }
+
+      li::before {
+        content: counter(list);
+        position: absolute;
+        top: -40px;
+        left: 0;
+        z-index: -1;
+        color: white;
+        opacity: 0.7;
+        font-family: monospace;
+        font-weight: 700;
+        font-size: 48px;
+      }
+
+      li:nth-child(1)::before,
+      li:nth-child(2)::before,
+      li:nth-child(3)::before,
+      li:nth-child(4)::before,
+      li:nth-child(5)::before,
+      li:nth-child(6)::before,
+      li:nth-child(7)::before,
+      li:nth-child(8)::before,
+      li:nth-child(9)::before {
+        content: '0' counter(list);
+      }
+
+      a {
+        color: black;
+        padding: 4px;
+        text-decoration: none;
+        transition: background-color 200ms;
+      }
+
+      a:hover {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+
+      a:focus {
+        outline-style: solid;
+        outline-width: 3px;
+        outline-color: white;
+        outline-offset: 8px;
+      }
+
+      .github {
+        text-align: center;
+        font-size: 18px;
+      }
+
+      @media (min-width: 700px) {
+        body {
+          padding: 64px;
+          padding-bottom: 16px;
+        }
+
+        h1 {
+          margin: 0 0 80px;
+          font-size: 80px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>JavaScript 30&nbsp;Day Challenge</h1>
+
+    <ol>
+      <li>
+        <a href="/01 - JavaScript Drum Kit/">JavaScript Drum Kit</a>
+      </li>
+      <li>
+        <a href="/02 - JS and CSS Clock/">CSS +&nbsp;JS Clock</a>
+      </li>
+      <li>
+        <a href="/03 - CSS Variables/">CSS Variables</a>
+      </li>
+      <li>
+        <a href="/04 - Array Cardio Day 1/">Array Cardio Day&nbsp;1</a>
+      </li>
+      <li>
+        <a href="/05 - Flex Panel Gallery/">Flex Panel Gallery</a>
+      </li>
+      <li>
+        <a href="/06 - Type Ahead/">Type Ahead</a>
+      </li>
+      <li>
+        <a href="/07 - Array Cardio Day 2/">Array Cardio Day&nbsp;2</a>
+      </li>
+      <li>
+        <a href="/08 - Fun with HTML5 Canvas/">Fun with HTML5 Canvas</a>
+      </li>
+      <li>
+        <a href="/09 - Dev Tools Domination/">Dev Tools Domination</a>
+      </li>
+      <li>
+        <a href="/10 - Hold Shift and Check Checkboxes/"
+          >Hold Shift and Check Checkboxes</a
+        >
+      </li>
+      <li>
+        <a href="/11 - Custom Video Player/">Custom Video Player</a>
+      </li>
+      <li>
+        <a href="/12 - Key Sequence Detection/">Key Sequence Detection</a>
+      </li>
+      <li>
+        <a href="/13 - Slide in on Scroll/">Slide in on&nbsp;Scroll</a>
+      </li>
+      <li>
+        <a href="/14 - JavaScript References VS Copying/"
+          >JavaScript References VS Copying</a
+        >
+      </li>
+      <li>
+        <a href="/15 - LocalStorage/">LocalStorage</a>
+      </li>
+      <li>
+        <a href="/16 - Mouse Move Shadow/">Mouse Move Shadow</a>
+      </li>
+      <li>
+        <a href="/17 - Sort Without Articles/">Sort Without Articles</a>
+      </li>
+      <li>
+        <a href="/18 - Adding Up Times with Reduce/"
+          >Adding Up Times with&nbsp;Reduce</a
+        >
+      </li>
+    </ol>
+
+    <p class="github">
+      <a href="https://github.com/fcsmJS/javascript30">GitHub</a>
+    </p>
+  </body>
+</html>
